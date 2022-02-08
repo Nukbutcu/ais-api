@@ -27,10 +27,9 @@ function parsePosition(position) {
 
 const headersVF = {
   "User-Agent":
-    "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3703.0 Safari/537.36",
+    "user-agent: Mozilla/17.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3703.0 Safari/537.36",
   "Content-Type": "application/x-www-form-urlencoded",
   "cache-control": "max-age=0",
-  "Access-Control-Allow-Origin": "https://still-garden-02526.herokuapp.com",
   accept:
     "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
   "upgrade-insecure-requests": 1,
@@ -42,7 +41,6 @@ const headersMT = {
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3703.0 Safari/537.36",
   "Content-Type": "application/x-www-form-urlencoded",
   "cache-control": "max-age=0",
-  "Access-Control-Allow-Origin": "https://still-garden-02526.herokuapp.com",
   accept:
     "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
   "upgrade-insecure-requests": 1,

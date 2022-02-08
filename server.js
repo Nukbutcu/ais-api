@@ -1,5 +1,7 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
+
 
 const api = require('./api');
 const areaApi = require('./area');
@@ -10,7 +12,7 @@ const areaApi = require('./area');
  */
 function init(port) {
   const app = express();
-
+  app.use(cors());
   app.set('port', (port ||process.env.PORT || 5000))
 
   app.get('/', (request, response) => {
@@ -24,12 +26,14 @@ function init(port) {
   });
 
   app.get('/getLastPositionFromMT/:mmsi', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");	
     api.getLocationFromMT(req.params.mmsi, (result) => {
       res.send(result);
     });
   });
 
   app.get('/getLastPosition/:mmsi', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");	
     api.getLocation(req.params.mmsi, (result) => {
       res.send(result);
     });
